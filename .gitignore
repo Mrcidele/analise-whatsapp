@@ -1,0 +1,8 @@
+# Conversas exportadas (dados pessoais)
+*.txt
+!requirements.txt
+*.zip
+*.vcf
+
+.ipynb_checkpoints/
+__pycache__/
