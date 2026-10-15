@@ -30,11 +30,7 @@ Envie o arquivo para você mesmo (e-mail, Drive etc.) e baixe no computador.
 
 1. Acesse [colab.research.google.com](https://colab.research.google.com) > **Arquivo > Fazer upload de notebook** e selecione `analise_whatsapp.ipynb`.
 2. No menu lateral esquerdo, clique no ícone de **pasta** e arraste o arquivo exportado (`.zip` ou `.txt`).
-3. Na célula **Configuração**, ajuste o nome do arquivo:
-   ```python
-   ARQUIVO = "Conversa do WhatsApp com Meu Grupo.zip"
-   ```
-4. **Ambiente de execução > Executar tudo** (Ctrl+F9).
+3. **Ambiente de execução > Executar tudo** (Ctrl+F9).
 
 ### Opção B — Localmente
 
@@ -48,10 +44,17 @@ jupyter notebook analise_whatsapp.ipynb
 ```
 
 1. Copie o arquivo exportado para a pasta do projeto.
-2. Ajuste a variável `ARQUIVO` na célula **Configuração**.
-3. **Run > Run All Cells**.
+2. **Run > Run All Cells**.
 
 > No VS Code: instale a extensão **Jupyter**, abra o `.ipynb` e clique em **Run All**.
+
+### Qual arquivo é usado
+
+O notebook usa automaticamente o primeiro `.zip` ou `.txt` da pasta cujo nome contenha "WhatsApp" (padrão do nome gerado pelo app, ex.: `Conversa do WhatsApp com Meu Grupo.zip`). Para usar outro arquivo, preencha a variável na célula **Configuração**:
+
+```python
+ARQUIVO = "minha_conversa.txt"
+```
 
 ## Estrutura
 
